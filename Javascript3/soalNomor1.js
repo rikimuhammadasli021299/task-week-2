@@ -23,8 +23,9 @@ cekHariKerja('senin')
 
 // Handle promise menggunakan Try Catch
 const handlePromise = async (day) => {
-  // Blok kode try akan dijalankan jika promise mengembalikan nilai resolve (tidak ada error)
-  // Blok kode catch akan dijalankan jika promise mengembalikan nilai reject (terjadi error)
+  // Blok kode try dijalankan untuk mengecek apakah promise mengembalikan nilai reject atau resolve
+  // Jika promise mengembalikan resolve, maka block kode catch tidak akan dijalankan
+  // Jika promise mengembalikan reject, kode dalam block try akan diskip dan menjalankan block kode catch
   // Blok kode finally akan selalu dijalankan baik promise mengembalikan nilai resolve (tidak ada error) ataupun reject (terjadi error)
   try {
     const result = await cekHariKerja(day);
