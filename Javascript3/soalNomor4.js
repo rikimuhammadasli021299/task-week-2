@@ -1,8 +1,8 @@
 const linkApi = 'https://jsonplaceholder.typicode.com/users';
 
-const getData = async () => {
+const getData = async (url) => {
   try {
-    const response = await fetch(linkApi);
+    const response = await fetch(url);
     const result = await response.json();
     result.map((items) => console.log(`Name: ${items.name}`));
   } catch (error) {
@@ -10,4 +10,4 @@ const getData = async () => {
   }
 };
 
-getData();
+getData(linkApi);
