@@ -1,0 +1,19 @@
+{
+  "name": "task-week-2",
+  "version": "1.0.0",
+  "description": "task-week-2",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "soalNomor1": "node codeImplementation/soalNomor1.js",
+    "soalNomor2": "node codeImplementation/soalNomor2.js",
+    "soalNomor3": "node codeImplementation/soalNomor3.js"
+  },
+  "author": "riki",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "chalk-animation": "^2.0.3"
+  }
+}
